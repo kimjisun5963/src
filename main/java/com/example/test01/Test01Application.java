@@ -1,4 +1,4 @@
-package com.example.jdbcPj;
+package com.example.test01;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
