@@ -11,6 +11,6 @@
     <h1>Detail Page</h1>
     <hr/>
     ${dto.mno} / ${dto.id} / ${dto.pw} / ${dto.name}
-    <a href="delet?id=${dto.id}">삭제</a>
+    <a href="delete?id=${dto.id}">삭제</a>
 </body>
 </html>

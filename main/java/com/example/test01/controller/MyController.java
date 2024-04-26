@@ -102,7 +102,7 @@ public class MyController {
 	@GetMapping("/detail")
 	public String detail(@RequestParam("id") String id, Model model) {
 		
-		model.addAttribute(dao.getDto(id));
+		model.addAttribute("dto", dao.getDto(id));
 		
 		return "detail";
 	}
@@ -112,7 +112,7 @@ public class MyController {
 		
 		dao.delete(id);
 		
-		return "detail";
+		return "redirect:list";
 	}
 	
 	
