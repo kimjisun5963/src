@@ -10,8 +10,12 @@
 </head>
 <body>
     <h1>List Page</h1>
+    <hr/>
+    <div>
+        <a href="writeForm">회원가입</a>
+    </div>
     <c:forEach var="dto" items="${list}">
-        ${dto.mno} / ${dto.id} / ${dto.pw} / ${dto.name} <br/>
+        ${dto.mno} / <a href="/detail?id=${dto.id}">${dto.id} </a><br/>
     </c:forEach>
 </body>
 </html>

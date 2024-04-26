@@ -8,9 +8,9 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Main Page</h1>
+    <h1>Detail Page</h1>
     <hr/>
-    <a href="list">목록보기</a><br/>
-    <a href="command?id=ddd&pw=ccc&=name=ccc">커멘트객체 연습결과 페이지</a>
+    ${dto.mno} / ${dto.id} / ${dto.pw} / ${dto.name}
+    <a href="delet?id=${dto.id}">삭제</a>
 </body>
 </html>

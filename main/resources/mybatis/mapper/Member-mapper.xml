@@ -6,4 +6,22 @@
 	<select id="getList" resultType="com.example.test01.domain.MemberDto">
 		select * from tbl_member
 	</select>
+	<select id="getDto">
+		select * from tbl_member where id = #{id}
+	</select>
+	<insert id="write">
+		insert into tbl_member (id, pw, name) values (#{param1}, #{param2}, #{param3})
+	</insert>
+	<insert id="write2">
+		insert into tbl_member (id, pw, name) values (#{arg0}, #{arg1}, #{arg2})
+	</insert>
+	<insert id="write3">
+		insert into tbl_member (id, pw, name) values (#{id}, #{pw}, #{name})
+	</insert>
+	<insert id="write4">
+		insert into tbl_member (id, pw, name) values (#{dto.id}, #{dto.pw}, #{dto.name})
+	</insert>
+	<delete id="delete">
+		delete from tbl_member where id = #{id}
+	</delete>
 </mapper>

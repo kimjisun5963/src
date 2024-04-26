@@ -8,9 +8,8 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Main Page</h1>
+    <h1>Command 객체 연습</h1>
     <hr/>
-    <a href="list">목록보기</a><br/>
-    <a href="command?id=ddd&pw=ccc&=name=ccc">커멘트객체 연습결과 페이지</a>
+    ${memberDto.id}
 </body>
 </html>
